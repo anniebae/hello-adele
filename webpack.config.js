@@ -5,6 +5,7 @@ var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 	inject: 'body'
 })
 
+var path = require('path');
 
 module.exports = {
 	entry: [
@@ -22,6 +23,11 @@ module.exports = {
 				loader: "babel-loader"
 			}
 		]
+	},
+	resolve: {
+		alias: {
+			components: path.join(__dirname, 'app', 'components')
+		}
 	},
 	plugins: [HtmlWebpackPluginConfig]
 }
