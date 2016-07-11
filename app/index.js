@@ -1,16 +1,20 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
+import React from 'react'
+import { render } from 'react-dom'
+import {Route, Router, IndexRoute, browserHistory} from 'react-router'
 
-var HelloWorld = React.createClass({
-	render: function() {
-		return(
-			<div>ADELEEELELELE</div>
-		)
-	}
-})
+const App = props => {
+	return(
+		<div>
+			{props.children}
+		</div>
+	)
+}
 
 
 ReactDOM.render(
-	<HelloWorld />,
+	<Router history={browserHistory}>
+		<Route path="/" component={App}>
+		</Route>
+	</Router>,
 	document.getElementById('app')
 )
