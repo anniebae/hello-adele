@@ -10,6 +10,7 @@ var HelloWorld = React.createClass({
 })
 
 
-ReactDom.render(
-
+ReactDOM.render(
+	<HelloWorld />,
+	document.getElementById('app')
 )
