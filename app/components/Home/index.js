@@ -6,7 +6,7 @@ import Menu from 'components/Menu'
 class Home extends Component {
 	render() {
 		return(
-			<div>dis mai home
+			<div className="home-body">dis mai home
 				<Menu />
 			</div>
 		)

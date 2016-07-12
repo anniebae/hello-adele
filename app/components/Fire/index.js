@@ -1,11 +1,12 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router'
-import Menu from 'components/Menu';
+import Menu from 'components/Menu'
+import Styles from './styles.css'
 
 class Fire extends Component {
 	render() {
 		return(
-			<div>Set fire to da rain
+			<div className="fire-body">Set fire to da rain
 				<Menu />
 			</div>
 		)
