@@ -6,6 +6,7 @@ import Home from 'components/Home'
 import Hello from 'components/Hello'
 import Fire from 'components/Fire'
 
+import Styles from './stylesheets/styles.css'
 
 const App = props => {
 	return(

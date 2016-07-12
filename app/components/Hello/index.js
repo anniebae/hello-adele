@@ -1,7 +1,8 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router'
-import Styles from './styles.css'
 import Menu from 'components/Menu';
+
+import Styles from '../../stylesheets/styles.css'
 
 class Hello extends Component {
 	render() {

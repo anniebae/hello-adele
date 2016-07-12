@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router'
 import Menu from 'components/Menu'
-import Styles from './styles.css'
+import Styles from '../../stylesheets/styles.css'
 
 class Fire extends Component {
 	render() {
