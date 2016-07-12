@@ -16,7 +16,6 @@ const App = props => {
 }
 
 
-
 render(
 	<Router history={browserHistory}>
 		<Route path='/' component={App}>
