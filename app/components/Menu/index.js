@@ -4,7 +4,7 @@ import {Link} from 'react-router'
 class Menu extends Component {
 	render() {
 		return(
-			<ul>
+			<ul id="menu">
 				<li>
 					<Link to="/">Home</Link>
 				</li>

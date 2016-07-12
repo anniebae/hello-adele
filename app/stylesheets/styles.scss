@@ -9,3 +9,23 @@
 .home-body {
 	background-color: #999966;
 }
+
+
+body {
+	position: relative;
+	
+	#app {
+		ul#menu {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			text-align: center;
+
+			li {
+				display: inline;
+				padding: 10%;
+			}
+		}
+		
+	}
+}
