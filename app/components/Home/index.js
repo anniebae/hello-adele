@@ -8,7 +8,7 @@ class Home extends Component {
 	render() {
 		return(
 			<div className="home-body">dis mai home
-				<Menu />
+				
 			</div>
 		)
 	}

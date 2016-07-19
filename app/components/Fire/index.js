@@ -7,7 +7,7 @@ class Fire extends Component {
 	render() {
 		return(
 			<div className="fire-body">Set fire to da rain
-				<Menu />
+				
 			</div>
 		)
 	}
