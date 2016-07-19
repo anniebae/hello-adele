@@ -11,11 +11,21 @@ body {
   position: relative; }
   body #app ul#menu {
     list-style-type: none;
-    padding: 0;
+    padding: 45px;
     margin: 0;
     text-align: center; }
-    body #app ul#menu li {
-      display: inline;
-      padding: 10%; }
+    body #app ul#menu a {
+      color: white;
+      text-decoration: none; }
+      body #app ul#menu a li {
+        display: inline;
+        padding: 43px;
+        margin: 0 2px; }
+      body #app ul#menu a li.home-btn {
+        background-color: #999966; }
+      body #app ul#menu a li.hello-btn {
+        background-color: #996633; }
+      body #app ul#menu a li.fire-btn {
+        background-color: #666633; }
 
 /*# sourceMappingURL=styles.css.map */

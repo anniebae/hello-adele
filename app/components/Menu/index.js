@@ -5,15 +5,17 @@ class Menu extends Component {
 	render() {
 		return(
 			<ul id="menu">
-				<li>
-					<Link to="/">Home</Link>
-				</li>
-				<li>
-					<Link to="/hello">Hello</Link>
-				</li>
-				<li>
-					<Link to="/fire">Fire</Link>
-				</li>
+				<Link to="/">
+					<li className="home-btn">home</li>
+				</Link>
+
+				<Link to="/hello">
+					<li className="hello-btn">hello</li>
+				</Link>
+
+				<Link to="/fire">
+					<li className="fire-btn">fire</li>
+				</Link>
 			</ul>
 		)
 	}

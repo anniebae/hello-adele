@@ -13,18 +13,30 @@
 
 body {
 	position: relative;
-	
+
 	#app {
 		ul#menu {
 			list-style-type: none;
-			padding: 0;
+			padding: 45px;
 			margin: 0;
 			text-align: center;
 
-			li {
-				display: inline;
-				padding: 10%;
+			a {
+				color: white;
+				text-decoration: none;
+
+				li {
+					display:inline;
+					padding: 43px;
+					margin: 0 2px;
+				}
+				li.home-btn { background-color: #999966; }
+				li.hello-btn { background-color: #996633; }
+				li.fire-btn { background-color: #666633; }
 			}
+
+			
+
 		}
 		
 	}
