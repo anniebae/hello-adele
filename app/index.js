@@ -8,15 +8,22 @@ import Fire from 'components/Fire'
 import Menu from 'components/Menu'
 import Styles from './stylesheets/styles.css'
 
-const App = props => {
-	return(
+// const App = props => {
+// 	return(
 
-		<div>
-			<Menu />
-			{props.children}
-		</div>
-	)
-}
+// 		<div>
+// 			<Menu />
+// 			{props.children}
+// 		</div>
+// 	)
+// }
+
+const App = props => (
+	<div>
+		<Menu />
+		{props.children}
+	</div>
+)
 
 
 render(
