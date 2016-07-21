@@ -1,12 +1,29 @@
 .hello-body {
-  background-color: #669999; }
+  background: url("../img/hello.gif") no-repeat;
+  color: white;
+  background-size: cover;
+  /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh; }
 
 .fire-body {
   background: url("../img/fire.gif");
-  color: white; }
+  color: white;
+  background-size: cover;
+  /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh; }
 
 .home-body {
-  background-color: #999966; }
+  background: url("../img/home.gif");
+  color: white;
+  background-size: cover;
+  /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh; }
 
 body {
   position: relative; }
@@ -14,7 +31,9 @@ body {
     list-style-type: none;
     padding: 45px;
     margin: 0;
-    text-align: center; }
+    text-align: right;
+    position: absolute;
+    width: 100%; }
     body #app ul#menu a {
       color: white;
       text-decoration: none; }
