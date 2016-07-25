@@ -5,11 +5,13 @@ import Home from 'components/Home';
 import Hello from 'components/Hello';
 import Fire from 'components/Fire';
 
+var PromptContainer = require('../containers/PromptContainer');
+
 const routes = (
 	<Router history={browserHistory}>
 		<Route path='/' component={Home}>
-			<Route path='hello' component={Hello} />
-			<Route path='fire' component={Fire} />
+			<IndexRoute component={Hello} />
+			<Route path='fire' component={PromptContainer} />
 		</Route>
 	</Router>
 )

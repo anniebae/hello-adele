@@ -8,6 +8,7 @@ import Fire from 'components/Fire'
 import Menu from 'components/Menu'
 import Styles from './stylesheets/styles.css'
 
+
 // const App = props => {
 // 	return(
 
