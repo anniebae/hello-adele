@@ -1,48 +1,8 @@
-// import React from 'react'
-// import { render } from 'react-dom'
-// import {Route, Router, IndexRoute, browserHistory} from 'react-router'
+import React from 'react'
+import { render } from 'react-dom'
 
-// import Home from 'components/Home'
-// import Hello from 'components/Hello'
-// import Fire from 'components/Fire'
-import Menu from 'components/Menu'
+import routes from './config/routes'
+
 // import Styles from './stylesheets/styles.css'
 
-
-// const App = props => {
-// 	return(
-
-// 		<div>
-// 			<Menu />
-// 			{props.children}
-// 		</div>
-// 	)
-// }
-
-// const App = props => (
-// 	<div>
-// 		<Menu />
-// 		{props.children}
-// 	</div>
-// )
-
-
-// render(
-// 	<Router history={browserHistory}>
-// 		<Route path='/' component={App}>
-// 			<IndexRoute component={Home} />
-// 			<Route path='hello' component={Hello} />
-// 			<Route path='fire' component={Fire} />
-// 		</Route>
-// 	</Router>,
-// 	document.getElementById('app')
-// )
-
-var React = require('react');
-var ReactDOM = require('react-dom');
-var routes = require('./config/routes');
-
-ReactDOM.render(
-	routes,
-	document.getElementById('app')
-)
+render(routes, document.getElementById('app'))

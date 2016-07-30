@@ -18,8 +18,8 @@ module.exports = {
 	module: {
 		loaders: [
 			{
-				test: /\.js$/, 
-				exclude: /node_modules/, 
+				test: /\.js$/,
+				exclude: /node_modules/,
 				loader: "babel-loader"
 			},
 			{
@@ -45,7 +45,8 @@ module.exports = {
 	},
 	resolve: {
 		alias: {
-			components: path.join(__dirname, 'app', 'components')
+			components: path.join(__dirname, 'app', 'components'),
+			containers: path.join(__dirname, 'app', 'containers')
 		}
 	},
 	plugins: [HtmlWebpackPluginConfig]
