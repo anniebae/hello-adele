@@ -5,6 +5,8 @@ import App from 'containers/App'
 import HelloContainer from 'containers/HelloContainer'
 import HomeContainer from 'containers/HomeContainer'
 import FireContainer from 'containers/FireContainer'
+import Home from 'components/Home'
+import Main from 'components/Main'
 
 const routes = (
   <Router history={browserHistory}>

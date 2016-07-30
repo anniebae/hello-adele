@@ -5,4 +5,7 @@ import routes from './config/routes'
 
 // import Styles from './stylesheets/styles.css'
 
-render(routes, document.getElementById('app'))
+render(
+  routes,
+  document.getElementById('app')
+)
