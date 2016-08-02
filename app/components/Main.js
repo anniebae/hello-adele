@@ -1,20 +1,23 @@
-import React from 'react'
+import React, {Component} from 'react'
 import {Link} from 'react-router'
-// import AlertContainer from 'react-alert'
 
-var Main = React.createClass({
-	render: function() {
-		return (
-			<div className='main-container'>
-				<h1>Main component</h1>
-				<button onClick={function() {alert("left")}}>
-					Enter
-					
-				</button>
-				
-			</div>
-		)
-	}
-});
+class Main extends Component {
+  meLikeClick(e) {
+    console.log('Hi.', e)
+  }
+
+  render() {
+    return (
+      <div className='main-container'>
+        <h1>Main component</h1>
+        <Link to="/home">
+	        <button>
+	          Enter
+	        </button>
+        </Link>
+      </div>
+    )
+  }
+}
 
 module.exports = Main;
