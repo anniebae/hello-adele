@@ -5,7 +5,7 @@ class Menu extends Component {
 	render() {
 		return(
 			<ul id="menu">
-				<Link to="/">
+				<Link to="/home">
 					<li className="home-btn">home</li>
 				</Link>
 

@@ -11,7 +11,8 @@ import Main from 'components/Main'
 const routes = (
   <Router history={browserHistory}>
     <Route path='/' component={App}>
-      <IndexRoute component={HomeContainer} />
+      <IndexRoute component={Main} />
+      <Route path='home' component={HomeContainer} />
       <Route path='hello' header='HELLO IT ME' component={HelloContainer} />
       <Route path='fire' component={FireContainer} />
     </Route>

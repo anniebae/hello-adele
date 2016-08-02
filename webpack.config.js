@@ -7,6 +7,7 @@ var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 
 var path = require('path');
 
+
 module.exports = {
 	entry: [
 		'./app/index.js'
