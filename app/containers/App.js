@@ -4,6 +4,7 @@ import Menu from 'components/Menu'
 const App = props => (
   <div>
     <Menu />
+    {props.route.path !== '/' ? <Menu /> : null}
     {props.children}
   </div>
 )
