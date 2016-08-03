@@ -1,7 +1,23 @@
 .main-container {
   background: url("../img/static.jpg") no-repeat;
   background-size: cover;
-  color: #fff; }
+  color: #fff;
+  height: 100vh; }
+  .main-container .content a button.enter {
+    border: 3px solid white;
+    background: transparent;
+    color: white;
+    padding: 3% 7%;
+    font-size: 30px;
+    letter-spacing: 3px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+    .main-container .content a button.enter:hover {
+      background: #000; }
 
 .hello-body {
   background: url("../img/hello.gif") no-repeat;
