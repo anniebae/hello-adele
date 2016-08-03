@@ -12,7 +12,7 @@
     font-size: 30px;
     letter-spacing: 3px;
     position: absolute;
-    margin: auto;
+    margin: 1%;
     top: 0;
     right: 0;
     bottom: 0;
@@ -74,5 +74,9 @@ body {
         background-color: #996633; }
       body #app ul#menu a li.fire-btn {
         background-color: #666633; }
+  body #app .jumbotron {
+    background-color: #fff;
+    color: #3B3E2A;
+    opacity: 0.9; }
 
 /*# sourceMappingURL=styles.css.map */

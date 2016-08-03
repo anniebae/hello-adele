@@ -13,14 +13,17 @@
 			padding: 3% 7%;
 			font-size: 30px;
 			letter-spacing: 3px;
-			// margin-top: 15%;
 			position: absolute;
-			margin: auto;
+			margin: 1%;
 			top: 0;
 			right: 0;
 			bottom: 0;
 			left: 0;
 			z-index: 5;
+
+			// &:hover {
+			// 	background: #000;
+			// }
 
 		}
 	}
@@ -89,9 +92,11 @@ body {
 				li.hello-btn { background-color: #996633; }
 				li.fire-btn { background-color: #666633; }
 			}
-
-			
-
+		}
+		.jumbotron {
+			background-color: #fff;
+		    color: #3B3E2A;
+		    opacity: 0.9;
 		}
 		
 	}

@@ -11,7 +11,7 @@ class Main extends Component {
     return (
       <div className='main-container'>
 	        <Link to="/home">
-		        <button className="enter hvr-shutter-out-vertical">
+		        <button className="enter hvr-sweep-to-right">
 		          Enter
 		        </button>
 	        </Link>
