@@ -8,6 +8,7 @@ const HomeContainer = props => {
 
     return(
       <div className="home-body">dis mai home
+        <Menu />
         <div className="jumbotron col-sm-6 col-sm-offset-3 text-center">
         <h1>Search ADELE</h1>
           <div className="col-sm-12">
