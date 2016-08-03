@@ -2,7 +2,8 @@
   background: url("../img/static.jpg") no-repeat;
   background-size: cover;
   color: #fff;
-  height: 100vh; }
+  height: 100vh;
+  text-align: center; }
   .main-container .content a button.enter {
     border: 3px solid white;
     background: transparent;
@@ -16,8 +17,6 @@
     right: 0;
     bottom: 0;
     left: 0; }
-    .main-container .content a button.enter:hover {
-      background: #000; }
 
 .hello-body {
   background: url("../img/hello.gif") no-repeat;
