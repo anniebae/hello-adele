@@ -10,13 +10,12 @@ class Main extends Component {
   render() {
     return (
       <div className='main-container'>
-      	<div className="content">
 	        <Link to="/home">
 		        <button className="enter hvr-shutter-out-vertical">
 		          Enter
 		        </button>
 	        </Link>
-      	</div>
+	    <div className="overlay"></div>
       </div>
     )
   }
