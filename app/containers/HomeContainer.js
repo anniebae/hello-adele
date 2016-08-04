@@ -16,7 +16,7 @@ const HomeContainer = props => {
               <div className="form-group">
                 <input
                   className="form-control"
-                  placeholder="Search Song" 
+                  placeholder="enter Artist" 
                   type="text"/>
               </div>
 
