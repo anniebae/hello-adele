@@ -94,23 +94,25 @@ body {
 			}
 		}
 		.jumbotron {
-			background-color: #fff;
-		    color: #3B3E2A;
+			background-color: transparent;
+			border: 2px solid #fff;
+		    color: #fff;
 		    opacity: 0.9;
 		    margin-top: 200px;
 		    font-family: 'Helvetica';
+		    letter-spacing: 2px;
 
 		    div.col-sm-12 {
 		    	form {
 		    		.form-group {
 		    			button.btn {
 		    				background: transparent;
-		    				color: #3B3E2A;
-		    				border: 1px solid #3B3E2A;
+		    				color: #fff;
+		    				border: 1px solid #fff;
 
 		    				&:hover {
-		    					background: #3B3E2A;
-		    					color: #fff;
+		    					background: #fff;
+		    					color: #3B3E2A;
 		    				}
 		    			}
 		    		}

@@ -12,8 +12,8 @@ const routes = (
   <Router history={hashHistory}>
     <Route path='/' component={App}>
       <IndexRoute component={Main} />
-      <Route path='home' component={HomeContainer} />
-      <Route path='foyer/:home' component={HomeContainer} />
+      <Route path='home' header="artist" component={HomeContainer} />
+      <Route path='foyer/:home' header="title" component={HomeContainer} />
       <Route path='hello' header='HELLO IT ME' component={HelloContainer} />
       <Route path='fire' component={FireContainer} />
     </Route>

@@ -3,15 +3,15 @@ import {Link} from 'react-router'
 import Menu from 'components/Menu'
 import Styles from '../stylesheets/styles.css'
 import Hover from '../stylesheets/hover.css'
+var blueBg = require('../stylesheets').blueBg;
 
 class Main extends Component {
   
-
   render() {
     return (
       <div className='main-container'>
 	        <Link to="/home">
-		        <button className="enter hvr-bounce-to-right">
+		        <button className="enter hvr-bounce-to-right" style={blueBg}>
 		          Enter
 		        </button>
 	        </Link>

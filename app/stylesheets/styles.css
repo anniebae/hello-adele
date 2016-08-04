@@ -75,17 +75,19 @@ body {
       body #app ul#menu a li.fire-btn {
         background-color: #666633; }
   body #app .jumbotron {
-    background-color: #fff;
-    color: #3B3E2A;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
     opacity: 0.9;
     margin-top: 200px;
-    font-family: 'Helvetica'; }
+    font-family: 'Helvetica';
+    letter-spacing: 2px; }
     body #app .jumbotron div.col-sm-12 form .form-group button.btn {
       background: transparent;
-      color: #3B3E2A;
-      border: 1px solid #3B3E2A; }
+      color: #fff;
+      border: 1px solid #fff; }
       body #app .jumbotron div.col-sm-12 form .form-group button.btn:hover {
-        background: #3B3E2A;
-        color: #fff; }
+        background: #fff;
+        color: #3B3E2A; }
 
 /*# sourceMappingURL=styles.css.map */
