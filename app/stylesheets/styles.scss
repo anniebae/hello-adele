@@ -97,6 +97,25 @@ body {
 			background-color: #fff;
 		    color: #3B3E2A;
 		    opacity: 0.9;
+		    margin-top: 200px;
+		    font-family: 'Open Sans Condensed', sans-serif;
+
+		    div.col-sm-12 {
+		    	form {
+		    		.form-group {
+		    			button.btn {
+		    				background: transparent;
+		    				color: #3B3E2A;
+		    				border: 1px solid #3B3E2A;
+
+		    				&:hover {
+		    					background: #3B3E2A;
+		    					color: #fff;
+		    				}
+		    			}
+		    		}
+		    	}
+		    }
 		}
 		
 	}
