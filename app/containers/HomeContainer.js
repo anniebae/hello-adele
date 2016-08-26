@@ -2,7 +2,9 @@ import React, {Component} from 'react'
 import {Link} from 'react-router'
 import Menu from 'components/Menu'
 import Styles from '../stylesheets/styles.css'
-var blueBg = require('../stylesheets').blueBg
+
+var blueBg = require('../stylesheets').blueBg;
+var grayBg = require('../styles').grayBg;
 
 var HomeContainer = React.createClass({
   getInitialState:function() {
@@ -19,7 +21,7 @@ var HomeContainer = React.createClass({
     return(
       <div className="home-body">
         <Menu />
-        <div className="jumbotron col-sm-6 col-sm-offset-3 text-center" style={blueBg}>
+        <div className="jumbotron col-sm-6 col-sm-offset-3 text-center" style={grayBg}>
         <h1>{this.props.route.header}</h1>
           <div className="col-sm-12">
             <form>

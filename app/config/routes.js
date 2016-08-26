@@ -3,10 +3,12 @@ import {Route, Router, IndexRoute, browserHistory, hashHistory} from 'react-rout
 
 import App from 'containers/App'
 import HelloContainer from 'containers/HelloContainer'
-import HomeContainer from 'containers/HomeContainer'
+// import HomeContainer from 'containers/HomeContainer'
 import FireContainer from 'containers/FireContainer'
 import Home from 'components/Home'
 import Main from 'components/Main'
+
+var HomeContainer = require('../containers/HomeContainer');
 
 const routes = (
   <Router history={hashHistory}>
