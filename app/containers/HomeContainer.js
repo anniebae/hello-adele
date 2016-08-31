@@ -16,7 +16,7 @@ var HomeContainer = React.createClass({
     this.setState({
       artistName: e.target.value
     })
-  },
+  }, 
   onSubmitArtist: function(e) {
     e.preventDefault();
     var artistName = this.state.artistName;
