@@ -10,7 +10,7 @@ class Main extends Component {
   render() {
     return (
       <div className='main-container'>
-	        <Link to="/home">
+	        <Link to="/artist">
 		        <button className="enter hvr-bounce-to-right" style={blueBg}>
 		          Clique
 		        </button>

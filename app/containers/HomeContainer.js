@@ -28,7 +28,13 @@ var HomeContainer = React.createClass({
     });
   
     if (this.props.routeParams.artist) {
-      console.log(this.context)
+      this.context.router.push({
+        pathname: '/lyrics',
+        query: {
+          artist: this.props.routeParams.artist,
+          song: this.state.artist
+        }
+      })
       // go to lyrics
     } else {
       console.log(this.context)
