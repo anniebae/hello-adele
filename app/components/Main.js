@@ -12,7 +12,7 @@ class Main extends Component {
       <div className='main-container'>
 	        <Link to="/home">
 		        <button className="enter hvr-bounce-to-right" style={blueBg}>
-		          Enter
+		          Clique
 		        </button>
 	        </Link>
 	    <div className="overlay"></div>

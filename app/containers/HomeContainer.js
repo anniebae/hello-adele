@@ -9,13 +9,27 @@ var grayBg = require('../styles').grayBg;
 var HomeContainer = React.createClass({
   getInitialState:function() {
     return {
-      username: ''
+      artistName: ''
     }
   },
-  onUpdateUser: function(e) {
+  onUpdateArtist: function(e) {
     this.setState({
-      username: e.target.value
+      artistName: e.target.value
     })
+  },
+  onSubmitArtist: function(e) {
+    e.preventDefault();
+    var artistName = this.state.artistName;
+    this.setState({
+      artistName: ''
+    });
+  
+    if (this.props.routeParams.artist) {
+      // go to lyrics
+    } else {
+      // go to song title
+    }
+
   },
   render:function() {
     return(
@@ -24,13 +38,13 @@ var HomeContainer = React.createClass({
         <div className="jumbotron col-sm-6 col-sm-offset-3 text-center" style={grayBg}>
         <h1>{this.props.route.header}</h1>
           <div className="col-sm-12">
-            <form>
+            <form onSubmit={this.onSubmitArtist}>
               <div className="form-group">
                 <input
                   className="form-control"
                   placeholder="enter Artist" 
-                  onChange={this.onUpdateUser}
-                  value={this.state.username}
+                  onChange={this.onUpdateArtist}
+                  value={this.state.artistName}
                   type="text"/>
               </div>
 
