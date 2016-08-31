@@ -7,6 +7,9 @@ var blueBg = require('../stylesheets').blueBg;
 var grayBg = require('../styles').grayBg;
 
 var HomeContainer = React.createClass({
+  contextTypes: {
+    router: React.PropTypes.object.isRequired
+  },
   getInitialState:function() {
     return {
       artistName: ''
@@ -25,8 +28,10 @@ var HomeContainer = React.createClass({
     });
   
     if (this.props.routeParams.artist) {
+      console.log(this.context)
       // go to lyrics
     } else {
+      console.log(this.context)
       // go to song title
     }
 
