@@ -48,7 +48,7 @@ var HomeContainer = React.createClass({
       <Home
         onSubmitArtist={this.handleSubmitArtist}
         onUpdateArtist={this.handleUpdateArtist}
-        header={this.props.route.header}
+        header={[]}
         artistName={this.state.artistName} />
     )
   }
