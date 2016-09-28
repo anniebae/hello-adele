@@ -10,15 +10,15 @@ var Home = React.createClass({
 			<div className="home-body">
 	        <Menu />
 	        <div className="jumbotron col-sm-6 col-sm-offset-3 text-center" style={grayBg}>
-	        <h1>{this.props.route.header}</h1>
+	        <h1>{this.props.header}</h1>
 	          <div className="col-sm-12">
-	            <form onSubmit={this.onSubmitArtist}>
+	            <form onSubmit={this.props.onSubmitArtist}>
 	              <div className="form-group">
 	                <input
 	                  className="form-control"
 	                  placeholder="enter Artist" 
-	                  onChange={this.onUpdateArtist}
-	                  value={this.state.artistName}
+	                  onChange={this.props.onUpdateArtist}
+	                  value={this.props.artistName}
 	                  type="text"/>
 	              </div>
 

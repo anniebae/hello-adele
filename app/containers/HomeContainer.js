@@ -5,7 +5,6 @@ import Home from 'components/Home'
 import Styles from '../stylesheets/styles.css'
 
 var blueBg = require('../stylesheets').blueBg;
-var grayBg = require('../styles').grayBg;
 
 var HomeContainer = React.createClass({
   contextTypes: {
