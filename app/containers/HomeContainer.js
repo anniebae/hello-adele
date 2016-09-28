@@ -32,12 +32,13 @@ var HomeContainer = React.createClass({
         pathname: '/lyrics',
         query: {
           artist: this.props.routeParams.artist,
-          song: this.state.artist
+          song: this.state.artistName
         }
       })
       // go to lyrics
     } else {
       console.log(this.context)
+      this.context.router.push('/song/' + this.state.artistName)
       // go to song title
     }
 
