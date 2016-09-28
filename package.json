@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "production": "webpack -p",
-    "start": "webpack-dev-server --port 6200"
+    "start": "webpack-dev-server --port 5800"
   },
   "repository": {
     "type": "git",
