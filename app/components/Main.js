@@ -32,4 +32,4 @@ class Main extends Component {
   }
 }
 
-module.exports = Main;
+export default Main

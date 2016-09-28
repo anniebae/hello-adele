@@ -8,7 +8,10 @@ import FireContainer from 'containers/FireContainer'
 import Home from 'components/Home'
 import Main from 'components/Main'
 
-var HomeContainer = require('../containers/HomeContainer');
+import HomeContainer from 'containers/HomeContainer'
+import ConfirmLyricContainer from 'containers/ConfirmLyricContainer'
+
+// var HomeContainer = require('../containers/HomeContainer');
 
 const routes = (
   <Router history={hashHistory}>
@@ -18,6 +21,7 @@ const routes = (
       <Route path='song/:artist' header="song title" component={HomeContainer} />
       <Route path='hello' header='HELLO IT ME' component={HelloContainer} />
       <Route path='fire' component={FireContainer} />
+      <Route path='lyric' component={ConfirmLyricContainer} />
     </Route>
   </Router>
 )

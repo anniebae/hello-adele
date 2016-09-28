@@ -6,6 +6,7 @@ import Styles from '../stylesheets/styles.css'
 
 var blueBg = require('../stylesheets').blueBg;
 
+
 var HomeContainer = React.createClass({
   contextTypes: {
     router: React.PropTypes.object.isRequired
