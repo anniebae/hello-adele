@@ -16,12 +16,12 @@ var HomeContainer = React.createClass({
       artistName: ''
     }
   },
-  onUpdateArtist: function(e) {
+  handleUpdateArtist: function(e) {
     this.setState({
       artistName: e.target.value
     })
   }, 
-  onSubmitArtist: function(e) {
+  handleSubmitArtist: function(e) {
     e.preventDefault();
     var artistName = this.state.artistName;
     this.setState({
@@ -46,7 +46,11 @@ var HomeContainer = React.createClass({
   },
   render:function() {
     return(
-      <Home />
+      <Home
+        onSubmitArtist={this.handleSubmitArtist}
+        onUpdateArtist={this.handleUpdateArtist}
+        header={this.props.route.header}
+        artistName={this.state.artistName} />
     )
   }
 })
