@@ -1,23 +1,40 @@
-var React = require('react');
-// var transparentBg = require('../').transparentBg;
+import React, {Component} from 'react'
+import Menu from 'components/Menu'
+import Styles from '../stylesheets/styles.css'
+
 var grayBg = require('../styles').grayBg;
-var ReactRouter = require('react-router');
-var Link = ReactRouter.Link;
 
 var Home = React.createClass({
 	render: function() {
-		return(
-			<div className="jumbotron col-sm-12 text-center" style={grayBg}>
-				<h1>Github Battle</h1>
-				<p className="lead">Some fancy motto</p>
-				<Link to="/home">
-					<button type="button" className="btn btn-lg btn-success">
-						Clique
-					</button>
-				</Link>
-			</div>
+		return (
+			<div className="home-body">
+	        <Menu />
+	        <div className="jumbotron col-sm-6 col-sm-offset-3 text-center" style={grayBg}>
+	        <h1>{this.props.route.header}</h1>
+	          <div className="col-sm-12">
+	            <form onSubmit={this.onSubmitArtist}>
+	              <div className="form-group">
+	                <input
+	                  className="form-control"
+	                  placeholder="enter Artist" 
+	                  onChange={this.onUpdateArtist}
+	                  value={this.state.artistName}
+	                  type="text"/>
+	              </div>
+
+	              <div className="form-group col-sm-4 col-sm-offset-4">
+	                <button
+	                  className="btn btn-block btn-success"
+	                  type="submit">
+	                    Continue
+	                </button>
+	              </div>
+	            </form>
+	          </div>
+	        </div>
+	      </div>
 		)
 	}
-});
+})
 
-module.exports = Home;
+export default Home
