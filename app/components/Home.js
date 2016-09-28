@@ -36,7 +36,7 @@ function Home (props) {
 	)
 }
 
-Home.protoTypes = {
+Home.propTypes = {
 	header: PropTypes.string.isRequired,
 	onUpdateArtist: PropTypes.func.isRequired,
 	onSubmitArtist: PropTypes.func.isRequired,
