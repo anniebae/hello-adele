@@ -1,6 +1,6 @@
 var React = require('react');
 
-var ConfirmBattle = require('../components/ConfirmLyric');
+var ConfirmLyric = require('../components/ConfirmLyric');
 
 var ConfirmLyricContainer = React.createClass({
   contextTypes: {
@@ -20,4 +20,4 @@ var ConfirmLyricContainer = React.createClass({
   }
 });
 
-module.exports = ConfirmLyricContainer;
+export default ConfirmLyricContainer

@@ -6,4 +6,5 @@ function ConfirmLyric (props) {
 	)
 }
 
-module.exports = ConfirmLyric;
+
+export default ConfirmLyric
