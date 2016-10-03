@@ -20,7 +20,7 @@ var ConfirmLyricContainer = React.createClass({
 
 	componentDidMount: function() {
 		var query = this.props.location.query;
-		githubHelpers.getArtistInfo([query.artist, query.song])
+		githubHelpers.getSongInfo([query.artist, query.song])
 		// console.log('componentDidMount');
 		// Fetch info from github(genius) then update state
 		// console.log('QUERY', query);

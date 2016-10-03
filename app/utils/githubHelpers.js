@@ -9,7 +9,7 @@ function getArtistInfo(artistName) {
 }
 
 var helpers = {
-	getArtistInfo: function(artist) {
+	getSongInfo: function(artist) {
 		return axios.all(artist.map(function (artistName) {
 			return getArtistInfo(artistName)
 		})).then(function(info) {
