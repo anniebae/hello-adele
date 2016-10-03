@@ -14,8 +14,10 @@ var helpers = {
 			return getArtistInfo(artistName)
 		})).then(function(info) {
 			return info.map(function (artist) {
-				console.log(artist.data);
+				return artist.data;
 			})
+		}).catch(function (err) {
+			console.warn('Error in getSongInfo', err);
 		})
 		// fetch some data from github
 		// npm install axios
