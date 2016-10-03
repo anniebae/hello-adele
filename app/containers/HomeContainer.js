@@ -42,7 +42,6 @@ var HomeContainer = React.createClass({
       this.context.router.push('/song/' + this.state.artistName)
       // go to song title
     }
-
   },
   render:function() {
     return(
