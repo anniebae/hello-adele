@@ -1,6 +1,7 @@
 var React = require('react');
 
 var ConfirmLyric = require('../components/ConfirmLyric');
+var githubHelpers = require('../utils/githubHelpers');
 
 var ConfirmLyricContainer = React.createClass({
 	contextTypes: {
@@ -19,16 +20,17 @@ var ConfirmLyricContainer = React.createClass({
 
 	componentDidMount: function() {
 		var query = this.props.location.query;
-		console.log('componentDidMount');
+		githubHelpers.getArtistInfo([query.artist, query.song])
+		// console.log('componentDidMount');
 		// Fetch info from github(genius) then update state
 		// console.log('QUERY', query);
 	},
-	componentWillReceiveProps: function() {
-		console.log('componentWillReceiveProps');
-	},
-	componentWillUnmount: function() {
-		console.log('componentWillUnmount');
-	},
+	// componentWillReceiveProps: function() {
+	// 	console.log('componentWillReceiveProps');
+	// },
+	// componentWillUnmount: function() {
+	// 	console.log('componentWillUnmount');
+	// },
 	render: function () {
 		return (
 		  <ConfirmLyric 
