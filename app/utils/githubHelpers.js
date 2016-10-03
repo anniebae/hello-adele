@@ -13,7 +13,9 @@ var helpers = {
 		return axios.all(artist.map(function (artistName) {
 			return getArtistInfo(artistName)
 		})).then(function(info) {
-			console.log('INFO', info)
+			return info.map(function (artist) {
+				console.log(artist.data);
+			})
 		})
 		// fetch some data from github
 		// npm install axios
