@@ -38,5 +38,4 @@ var ConfirmLyricContainer = React.createClass({
 	}
 });
 
-// export default ConfirmLyricContainer
-module.exports = ConfirmLyricContainer;
+export default ConfirmLyricContainer
