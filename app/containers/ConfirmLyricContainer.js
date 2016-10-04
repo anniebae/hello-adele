@@ -1,5 +1,4 @@
 var React = require('react');
-
 var ConfirmLyric = require('../components/ConfirmLyric');
 var githubHelpers = require('../utils/githubHelpers');
 
@@ -27,7 +26,7 @@ var ConfirmLyricContainer = React.createClass({
 					isLoading: false,
 					artistInfo: [artist[0], artist[1]]
 				})
-			})
+			}.bind(this))
 		// Fetch info from github(genius) then update state
 	},
 	render: function () {
@@ -39,4 +38,5 @@ var ConfirmLyricContainer = React.createClass({
 	}
 });
 
-export default ConfirmLyricContainer
+// export default ConfirmLyricContainer
+module.exports = ConfirmLyricContainer;
