@@ -2,16 +2,14 @@ import React from 'react';
 import {Route, Router, IndexRoute, browserHistory, hashHistory} from 'react-router';
 
 import App from 'containers/App'
+import HomeContainer from 'containers/HomeContainer'
 import HelloContainer from 'containers/HelloContainer'
-// import HomeContainer from 'containers/HomeContainer'
 import FireContainer from 'containers/FireContainer'
 import Home from 'components/Home'
 import Main from 'components/Main'
 
-import HomeContainer from 'containers/HomeContainer'
 import ConfirmLyricContainer from 'containers/ConfirmLyricContainer'
-
-// var HomeContainer = require('../containers/HomeContainer');
+import ResultsContainer from 'containers/ResultsContainer'
 
 const routes = (
   <Router history={hashHistory}>
@@ -22,6 +20,8 @@ const routes = (
       <Route path='hello' header='HELLO IT ME' component={HelloContainer} />
       <Route path='fire' component={FireContainer} />
       <Route path='lyric' component={ConfirmLyricContainer} />
+      <Route path='results' component={ResultsContainer} />
+
     </Route>
   </Router>
 )
