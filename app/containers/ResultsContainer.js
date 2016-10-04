@@ -3,12 +3,18 @@ import Results from '../components/Results'
 
 
 var ResultsContainer = React.createClass({
+	getInitialState: function() {
+		return {
+			isLoading: true,
+			scores: []
+		}
+	},
 	render: function() {
 		return (
-			<div />
+			<Results isLoading={this.state.isLoading} scores={this.state.scores} />
 		)
 	}
 })
 
 
-module.exports = ResultsContainer;
+export default ResultsContainer;
